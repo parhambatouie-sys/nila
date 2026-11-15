@@ -38,7 +38,7 @@ export default function Hero() {
               className="mb-6 flex items-center gap-3"
             >
               <span className="h-px w-10 bg-rose" />
-              <span className="text-[11px] tracking-[0.4em] text-cream/80">نیلا — نسخه‌ی ویژه ۲۰۲۵</span>
+              <span className="text-[11px] tracking-[0.4em] text-cream/80">نیلا</span>
             </motion.div>
 
             <motion.h1
