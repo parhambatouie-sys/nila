@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* پالت رنگی جدید نیلا (Mauve & Pearl) */
+  --color-cream: #F9F9F9; /* سفید صدفی برای پس‌زمینه */
+  --color-ink: #1A1A1A;   /* مشکی مات برای متن‌ها */
+  --color-rose: #B76E79;  /* صورتی ماو (رنگ اصلی برند) */
+  --color-gold: #B76E79;  /* برای یکپارچگی، رنگ طلایی هم به ماو تغییر کرد */
+  --color-blush: #FDF5F6; /* صورتی خیلی روشن برای هاورها و پس‌زمینه‌های جزئی */
+
+  /* فونت‌ها */
+  --font-display: "Playfair Display", var(--font-vazirmatn), serif;
+  --font-body: var(--font-vazirmatn), system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html { 
+  direction: rtl; 
+  scroll-behavior: smooth; 
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* رنگ انتخاب متن (Selection) با صورتی جدید */
+::selection { 
+  background: var(--color-rose); 
+  color: white; 
 }
