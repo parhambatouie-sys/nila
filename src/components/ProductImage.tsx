@@ -21,7 +21,6 @@ export default function ProductImage({ src, alt, className, ...props }: ImagePro
       alt={alt}
       className={className}
       onError={() => setError(true)}
-      unoptimized // 👈 این خط جادو می‌کنه! عکس رو مستقیم از مرورگر لود می‌کنه
       {...props}
     />
   );
